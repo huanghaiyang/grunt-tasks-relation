@@ -1,0 +1,34 @@
+{
+  "name": "grunt-tasks-relation-graph",
+  "version": "1.0.0",
+  "description": "grunt tasks relation graph",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "grunt test",
+    "debug": "node-debug --web-port=8081 grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huanghaiyang/grunt-tasks-relation-graph.git"
+  },
+  "keywords": [
+    "grunt",
+    "tasks",
+    "relation",
+    "graph"
+  ],
+  "author": "huanghaiyang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huanghaiyang/grunt-tasks-relation-graph/issues"
+  },
+  "homepage": "https://github.com/huanghaiyang/grunt-tasks-relation-graph#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
