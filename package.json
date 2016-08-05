@@ -1,7 +1,7 @@
 {
-  "name": "grunt-tasks-relation-graph",
+  "name": "grunt-tasks-relation",
   "version": "1.0.0",
-  "description": "grunt tasks relation graph",
+  "description": "grunt tasks relation ",
   "main": "src/index.js",
   "scripts": {
     "test": "grunt test",
@@ -9,26 +9,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huanghaiyang/grunt-tasks-relation-graph.git"
+    "url": "git+https://github.com/huanghaiyang/grunt-tasks-relation.git"
   },
   "keywords": [
     "grunt",
     "tasks",
-    "relation",
-    "graph"
+    "relation"
   ],
   "author": "huanghaiyang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/huanghaiyang/grunt-tasks-relation-graph/issues"
+    "url": "https://github.com/huanghaiyang/grunt-tasks-relation/issues"
   },
-  "homepage": "https://github.com/huanghaiyang/grunt-tasks-relation-graph#readme",
+  "homepage": "https://github.com/huanghaiyang/grunt-tasks-relation#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0"
   },
   "dependencies": {
+    "grunt-contrib-watch": "^1.0.0",
     "underscore": "^1.8.3"
   }
 }
