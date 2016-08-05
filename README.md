@@ -9,7 +9,7 @@ npm install grunt-tasks-relation --save-dev
 ## how to use
 load plugin in Gruntfile.js
 ```
-grunt.loadTasks('grunt-tasks-relation');
+grunt.loadNpmTasks('grunt-tasks-relation');
 
 ```
 test example 
