@@ -13,7 +13,7 @@ grunt.loadNpmTasks('grunt-tasks-relation');
 
 ```
 test example 
-```
+```javascript
 grunt.initConfig({
     jshint: {
       all: [
