@@ -6,7 +6,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     jshint: {
       all: [
-        'src/**/*.js'
+        'tasks/**/*.js'
       ],
       options: {
         jshintrc: '.jshintrc'
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     watch: {
       tasks: ['clean', 'jshint'],
       scripts: {
-        files: 'src/**/*.js',
+        files: 'tasks/**/*.js',
         tasks: ['jshint'],
         options: {
           interrupt: true,
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
   });
 
   // Actually load this plugin's task(s).
-  grunt.loadTasks('src');
+  grunt.loadTasks('tasks');
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-jshint');

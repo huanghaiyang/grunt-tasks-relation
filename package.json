@@ -1,12 +1,13 @@
 {
   "name": "grunt-tasks-relation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "grunt tasks relation ",
-  "main": "src/index.js",
+  "main": "tasks/index.js",
   "scripts": {
     "test": "grunt test",
     "debug": "node-debug --web-port=8081 grunt test"
   },
+  "files": ["tasks"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/huanghaiyang/grunt-tasks-relation.git"
