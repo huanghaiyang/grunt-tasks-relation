@@ -1,6 +1,6 @@
 {
   "name": "grunt-tasks-relation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "grunt tasks relation ",
   "main": "tasks/index.js",
   "scripts": {

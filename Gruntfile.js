@@ -44,5 +44,7 @@ module.exports = function(grunt) {
   grunt.registerTask('test', ['jshint', 'clean', 'tasksRelation']);
 
   // for test
-  grunt.registerTask('test1', ['tasksRelation']);
+  grunt.registerTask('test1', ['tasksRelation'],  ()=>{
+    grunt.task.run('clean');
+  });
 };

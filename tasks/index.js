@@ -7,6 +7,7 @@ const name = 'tasksRelation',
 	infoReg = /Alias\sfor\s(("[\w]+",?\s)*)tasks?\./im;
 
 module.exports = function(grunt) {
+	
 	grunt.registerMultiTask(name, 'find out tasks realtion.', function() {
 		let _tasks = grunt.task._tasks;
 		let taskNames = _.chain(_tasks).keys().value();
@@ -35,14 +36,19 @@ module.exports = function(grunt) {
 					}
 				} else { // task registed by registerTask()
 					let info = _tasks[taskName].info;
-					let matches = info.match(infoReg);
-					if (matches && matches.length >= 2) {
-						let deps = matches[1];
-						deps = deps.split(/,/).map((dep) => {
-							return dep.replace(/^\s*"|"\s*$/ig, '');
-						});
-						registedTasks[taskName] = deps;
+					if(_.isArray(info)) {
+						registedTasks[taskName] = info;
+					}else if(_.isString(info)){
+						let matches = info.match(infoReg);
+						if (matches && matches.length >= 2) {
+							let deps = matches[1];
+							deps = deps.split(/,/).map((dep) => {
+								return dep.replace(/^\s*"|"\s*$/ig, '');
+							});
+							registedTasks[taskName] = deps;
+						}
 					}
+					
 				}
 			});
 			var t = new Table({
